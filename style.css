@@ -44,10 +44,10 @@ body {
 
 .btn span {
     height: 2px;
-    background-color: #ff0000;
+    background-color: #007ACC;
 }
 
 .btn:hover {
-    background-color: #00ff1e;
+    background-color: #007ACC;
     transition-delay: 1s;
 }
