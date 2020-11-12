@@ -64,7 +64,7 @@ function btn_hover_circle_border_effect(btn_class_name) {
     // ------------------------------------
 
     // MOUSEENTER
-    key.on('mouseenter', function() {
+    key.hover(function() {
         $(this).find('span:nth-child(1)').css({
             'left': '100%',
             'transition': 4 * btn_transition_delay + 's',
@@ -88,11 +88,7 @@ function btn_hover_circle_border_effect(btn_class_name) {
             'transition': 4 * btn_transition_delay + 's',
             'transition-delay': 3 * btn_transition_delay + 's',
         });
-    });
-    // ------------------------------------
-
-    // MOUSEOUT
-    key.on('mouseout', function() {
+    }, function() {
         $(this).find('span:nth-child(1)').css({
             'left': '-100%',
             'transition': '0s',
@@ -112,7 +108,7 @@ function btn_hover_circle_border_effect(btn_class_name) {
             'bottom': '-100%',
             'transition': '0s',
         });
-    })
+    });
 
     // ------------------------------------
 }
